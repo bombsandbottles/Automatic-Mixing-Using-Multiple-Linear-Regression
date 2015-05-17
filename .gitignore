@@ -1,0 +1,10 @@
+#Ignore media
+*.wav
+*.mp3
+*.aif
+
+#Ignore pdf
+*.pdf
+
+#Ignore edited MATLAB
+*.m~
