@@ -91,7 +91,35 @@ stems = {'kp_cg_drums.aif',...
 % Plot the ground truth against the predicted weights for a song
 % -------------------------------------------------------------------------
 
+figure;
 
+subplot(4,1,1);
+plot(ground_truth(1,:), 'k');
+hold on;
+plot(predicted_coefs(1,:), 'r');
+title('DRUMS');
+ylabel('Amplitude');
+legend('Ground Truth','Predicted')
 
+subplot(4,1,2);
+plot(ground_truth(2,:), 'k');
+hold on;
+plot(predicted_coefs(2,:), 'r');
+title('BASS');
+ylabel('Amplitude');
 
+subplot(4,1,3);
+plot(ground_truth(3,:), 'k');
+hold on;
+plot(predicted_coefs(3,:), 'r');
+title('MELODY');
+ylabel('Amplitude');
+
+subplot(4,1,4);
+plot(ground_truth(4,:), 'k');
+hold on;
+plot(predicted_coefs(4,:), 'r');
+title('VOCALS');
+xlabel('Frames');
+ylabel('Amplitude');
 
