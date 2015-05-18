@@ -85,7 +85,7 @@ stems = {'kp_cg_drums.aif',...
          'kp_cg_vocals.aif'};
      
 % Perform the Mix
-[ mix, fs ] = auto_machine_mix( master, stems, predicted_coefs );
+[ auto_mix, fs ] = auto_machine_mix( master, stems, predicted_coefs );
 
 % -------------------------------------------------------------------------
 % Plot the ground truth against the predicted weights for a song

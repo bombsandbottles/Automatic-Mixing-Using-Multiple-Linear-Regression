@@ -24,6 +24,11 @@ for i=1:length(filenames)
 
     % Make the stem and the 2-track the same length
     stem = stem(1:x_len);
+    
+    %---------------------------------------------------------------------- 
+    % UNCOMMENT THIS IF USING LOUDNESS MEASUREMENT AS A FEATURE %
+    % [ stem ] = K_freq_weighting( stem );
+    %---------------------------------------------------------------------- 
 
     % Buffer with n_overlap
     stem_buff = buffer(stem, frame_window, frame_overlap, 'nodelay');
@@ -47,9 +52,6 @@ for j=1:length(stem_data)
         
         % Compute Spectral Centroid of Frame
         SC = spectral_centroid(stem_frame, fs);
-        
-        % Compute the Spectral Spread of a signal (Spectral Width)     
-%         SW = spectral_spread( stem_frame, SC, fs );
 
         % Compute RMS of the Frame
         rms_val = rms(stem_frame);
@@ -59,6 +61,23 @@ for j=1:length(stem_data)
         
         % Create feature vector        
         feature_vector = [SC rms_val SS];
+                
+        %------------------------------------------------------------------         
+        
+        % These are test features to try and play with evaluation        
+        
+        % Compute the Spectral Spread of a signal (Spectral Width) %   
+        % SW = spectral_spread( stem_frame, SC, fs );
+        
+        % Compute Loudness Measurement instead of RMS %        
+        % LU  = loudness_ebu( stem_frame )
+        
+        % Compute ZCR for stem_frame %
+        % zcr = zero_crossing_rate( stem_frame )
+        
+        % feature_vector = [SC SW SS LU zcr];
+        
+        %------------------------------------------------------------------ 
         
         % N x M matrix where M is features and N is frames
         feature_matrix(i,:) = feature_vector;
