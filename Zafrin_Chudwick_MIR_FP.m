@@ -82,6 +82,7 @@ stems = {'kp_cg_drums.aif',...
      
 % Perform the Mix
 [ auto_mix, fs ] = auto_machine_mix( master, stems, predicted_coefs );
+auto_mix = auto_mix / abs(max(auto_mix));
 
 % Write Out
 audiowrite('kp_cg_automix.wav', auto_mix, fs);
