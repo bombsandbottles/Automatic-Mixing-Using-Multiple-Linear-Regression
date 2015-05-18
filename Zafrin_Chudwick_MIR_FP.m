@@ -34,7 +34,7 @@ train_coefs{4} = coef;
 test_features{4} = features;
 
 % Lady Gaga - Alejandro
-[ coef, features ] = lg_a( );
+[ coef, features ] = kp_cg( );
 train_coefs{5} = coef;
 test_features{5} = features;
 
@@ -55,7 +55,7 @@ test_features{6} = features;
 % This is the test track that will get auto mixed in the end
 % -------------------------------------------------------------------------
 % Create the Test Set, (1 file)
-[ ground_truth, test_features ] = kp_cg( );
+[ ground_truth, test_features ] = lg_a( );
 
 % -------------------------------------------------------------------------
 % Compute the Multiple Linear Regression
@@ -72,20 +72,20 @@ test_features{6} = features;
 % -------------------------------------------------------------------------
 
 % 2-Track Katy Perry
-master = 'kp_cg_master.aif';
+master = 'lg_a_master.wav';
 
 % Choose the stems you want to auto-mix
-stems = {'kp_cg_drums.aif',...
-         'kp_cg_bass.aif',...
-         'kp_cg_melody.aif',...
-         'kp_cg_vocals.aif'};
+stems = {'lg_a_drums.wav',...
+         'lg_a_bass.wav',...
+         'lg_a_melody.wav',...
+         'lg_a_vocals.wav'};
      
 % Perform the Mix
 [ auto_mix, fs ] = auto_machine_mix( master, stems, predicted_coefs );
 auto_mix = auto_mix / abs(max(auto_mix));
 
 % Write Out
-audiowrite('kp_cg_automix.wav', auto_mix, fs);
+audiowrite('lg_a_automix_extrafeatures.wav', auto_mix, fs);
 
 % -------------------------------------------------------------------------
 % Plot the ground truth against the predicted weights for a song
@@ -127,3 +127,35 @@ title('VOCALS');
 xlabel('Frames');
 ylabel('Amplitude');
 
+% -------------------------------------------------------------------------
+% Plot Spectral Differences
+% -------------------------------------------------------------------------
+
+% Get averaged spectra for auto_mix and 2_track
+[ X_mag, X_mag_mean, X_mag_cum, fs ] = average_spectra( 'lg_a_master.wav' );
+[ X_mag_auto, X_mag_mean_auto, X_mag_cum_auto, fs ] = average_spectra( 'lg_a_master.wav', auto_mix );
+
+% Create Frequency Vector
+freq_vector = linspace(0, fs/2, length(X_mag_mean));
+
+% Plot Against Each Other
+figure;
+semilogx(freq_vector, mag2db(X_mag_mean)-6, 'k');
+hold on;
+semilogx(freq_vector, mag2db(X_mag_mean_auto), 'r');
+axis([0 22050 -20 40])
+set(gca,'XTickLabel',num2str(get(gca,'XTick').'));
+title('Auto Mix vs Professional Mix');
+xlabel('Frequency in Hz') % x-axis label
+ylabel('Magnitude (dB)') % y-axis label
+legend('Human Mix','Auto Mix')
+
+% Plot Difference
+difference = abs((mag2db(X_mag_mean)-6)) - abs(mag2db(X_mag_mean_auto));
+figure;
+semilogx(freq_vector, difference, 'k');
+axis([0 22050 0 40])
+set(gca,'XTickLabel',num2str(get(gca,'XTick').'));
+title('Difference Between Spectra');
+xlabel('Frequency in Hz') % x-axis label
+ylabel('Magnitude (dB)') % y-axis label

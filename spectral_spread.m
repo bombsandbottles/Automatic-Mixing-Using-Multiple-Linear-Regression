@@ -16,7 +16,7 @@ stem_mags = abs(fft(stem_frame));
 stem_mags = stem_mags(1:end/2);
 
 % Calculate the numerator
-numerator = sum((hertz_vector-SC).*stem_mags');
+numerator = sum(((hertz_vector-SC).^2).*stem_mags');
 
 % Sum across k 
 denominator = sum(stem_mags);
