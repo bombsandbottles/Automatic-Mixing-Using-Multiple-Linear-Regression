@@ -1,4 +1,4 @@
-function [ frame_coef, features ] = bs_gimmemore( )
+function [ frame_coef, features ] = ol_rg( )
 % -------------------------------------------------------------------------
 % Create fft params structure to pass to all functions 
 % -------------------------------------------------------------------------
@@ -18,7 +18,7 @@ fftparams = struct(field1, win_size,...
 % -------------------------------------------------------------------------
 
 % Import 2-Track
-[x_t, fs, t] = import_audio('Master Section.aif');
+[x_t, fs, t] = import_audio('ol_rg_master.wav');
 
 % 1 Second Frames
 frame_window = fs;
@@ -32,10 +32,10 @@ frame_overlap = fs*0.75;
 
 % Create Stem Database
 % -------------------------------------------------------------------------
-filenames = {'Drums.aif',...
-             'Bass.aif',...
-             'Melody.aif',...
-             'Vox.aif'};
+filenames = {'ol_rg_drums.wav',...
+             'ol_rg_bass.wav',...
+             'ol_rg_melody.wav',...
+             'ol_rg_vocals.wav'};
 
 % Get the estimated ground truth weights
 [ frame_coef ] = weight_estimation( filenames, x_t, frame_window, frame_overlap, fftparams );
@@ -46,7 +46,6 @@ filenames = {'Drums.aif',...
 
 % Returns a cell array containing feature matrices for each stem (Y)
 [ features ] = feature_extraction( filenames, x_t, frame_window, frame_overlap, fs);
-
 
 end
 

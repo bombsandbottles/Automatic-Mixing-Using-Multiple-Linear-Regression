@@ -7,7 +7,7 @@ function [ output, fs ] = auto_machine_mix( master, stems, predicted_coefs )
 [x_t, fs, t] = import_audio(master);
 
 % TESTINGSHORTSTEMS, 30 seconds
-x_t = round(x_t(1:end/6));
+% x_t = round(x_t(1:end/6));
 
 % This length will be used to zero-pad all stems to length of track
 x_len = length(x_t);

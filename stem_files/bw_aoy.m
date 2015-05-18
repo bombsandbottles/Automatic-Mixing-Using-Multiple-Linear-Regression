@@ -1,4 +1,4 @@
-function [ frame_coef, features ] = lg_alejandro( )
+function [ frame_coef, features ] = bw_aoy( )
 % -------------------------------------------------------------------------
 % Create fft params structure to pass to all functions 
 % -------------------------------------------------------------------------
@@ -18,7 +18,7 @@ fftparams = struct(field1, win_size,...
 % -------------------------------------------------------------------------
 
 % Import 2-Track
-[x_t, fs, t] = import_audio('Alejandro.wav');
+[x_t, fs, t] = import_audio('bw_aoy_master.wav');
 
 % 1 Second Frames
 frame_window = fs;
@@ -32,10 +32,10 @@ frame_overlap = fs*0.75;
 
 % Create Stem Database
 % -------------------------------------------------------------------------
-filenames = {'drums.wav',...
-             'bass.wav',...
-             'melody.wav',...
-             'vocals.wav'};
+filenames = {'bw_aoy_drums.wav',...
+             'bw_aoy_bass.wav',...
+             'bw_aoy_melody.wav',...
+             'bw_aoy_vocals.wav'};
 
 % Get the estimated ground truth weights
 [ frame_coef ] = weight_estimation( filenames, x_t, frame_window, frame_overlap, fftparams );

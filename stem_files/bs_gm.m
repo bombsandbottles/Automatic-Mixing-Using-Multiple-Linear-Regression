@@ -1,4 +1,4 @@
-function [ frame_coef, features ] = OL_rengirls( )
+function [ frame_coef, features ] = bs_gm( )
 % -------------------------------------------------------------------------
 % Create fft params structure to pass to all functions 
 % -------------------------------------------------------------------------
@@ -18,7 +18,7 @@ fftparams = struct(field1, win_size,...
 % -------------------------------------------------------------------------
 
 % Import 2-Track
-[x_t, fs, t] = import_audio('Master Section.wav');
+[x_t, fs, t] = import_audio('bs_gm_master.aif');
 
 % 1 Second Frames
 frame_window = fs;
@@ -32,10 +32,10 @@ frame_overlap = fs*0.75;
 
 % Create Stem Database
 % -------------------------------------------------------------------------
-filenames = {'RenaissanceGirls STEM Drums.wav',...
-             'RenaissanceGirls STEM Bass.wav',...
-             'meldoyBus.wav',...
-             'voxBus.wav'};
+filenames = {'bs_gm_drums.aif',...
+             'bs_gm_bass.aif',...
+             'bs_gm_melody.aif',...
+             'bs_gm_vocals.aif'};
 
 % Get the estimated ground truth weights
 [ frame_coef ] = weight_estimation( filenames, x_t, frame_window, frame_overlap, fftparams );
@@ -46,6 +46,7 @@ filenames = {'RenaissanceGirls STEM Drums.wav',...
 
 % Returns a cell array containing feature matrices for each stem (Y)
 [ features ] = feature_extraction( filenames, x_t, frame_window, frame_overlap, fs);
+
 
 end
 

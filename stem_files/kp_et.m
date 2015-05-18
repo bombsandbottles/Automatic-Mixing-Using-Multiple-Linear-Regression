@@ -1,4 +1,4 @@
-function [ frame_coef, features ] = katy_perry_et( )
+function [ frame_coef, features ] = kp_et( )
 % -------------------------------------------------------------------------
 % Create fft params structure to pass to all functions 
 % -------------------------------------------------------------------------
@@ -18,7 +18,7 @@ fftparams = struct(field1, win_size,...
 % -------------------------------------------------------------------------
 
 % Import 2-Track
-[x_t, fs, t] = import_audio('Katy Perry - ET_150bpm.wav');
+[x_t, fs, t] = import_audio('kp_et_master.wav');
 
 % 1 Second Frames
 frame_window = fs;
@@ -32,10 +32,10 @@ frame_overlap = fs*0.75;
 
 % Create Stem Database
 % -------------------------------------------------------------------------
-filenames = {'drums.wav',...
-             'bass.wav',...
-             'melody.wav',...
-             'vocals.wav'};
+filenames = {'kp_et_drums.wav',...
+             'kp_et_bass.wav',...
+             'kp_et_melody.wav',...
+             'kp_et_vocals.wav'};
 
 % Get the estimated ground truth weights
 [ frame_coef ] = weight_estimation( filenames, x_t, frame_window, frame_overlap, fftparams );

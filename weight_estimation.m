@@ -7,7 +7,7 @@
 function [ frame_coef ] = weight_estimation( filenames, x_t, frame_window, frame_overlap, fftparams )
 
 % TESTINGSHORTSTEMS, 30 seconds
-x_t = round(x_t(1:end/6));
+% x_t = round(x_t(1:end/6));
 
 % This length will be used to zero-pad all stems to length of track
 x_len = length(x_t);

@@ -1,4 +1,4 @@
-function [ frame_coef, features ] = katy_perry( )
+function [ frame_coef, features ] = kp_cg( )
 % -------------------------------------------------------------------------
 % Create fft params structure to pass to all functions 
 % -------------------------------------------------------------------------
@@ -18,7 +18,7 @@ fftparams = struct(field1, win_size,...
 % -------------------------------------------------------------------------
 
 % Import 2-Track
-[x_t, fs, t] = import_audio('Master Section.aif');
+[x_t, fs, t] = import_audio('kp_cg_master.aif');
 
 % 1 Second Frames
 frame_window = fs;
@@ -32,10 +32,10 @@ frame_overlap = fs*0.75;
 
 % Create Stem Database
 % -------------------------------------------------------------------------
-filenames = {'drumBus.aif',...
-             'Bass.aif',...
-             'melodyBus.aif',...
-             'Vocals Main.aif'};
+filenames = {'kp_cg_drums.aif',...
+             'kp_cg_bass.aif',...
+             'kp_cg_melody.aif',...
+             'kp_cg_vocals.aif'};
 
 % Get the estimated ground truth weights
 [ frame_coef ] = weight_estimation( filenames, x_t, frame_window, frame_overlap, fftparams );

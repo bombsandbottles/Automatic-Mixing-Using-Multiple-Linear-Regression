@@ -1,4 +1,4 @@
-function [ frame_coef, features ] = betty_who( )
+function [ frame_coef, features ] = bs_bti( )
 % -------------------------------------------------------------------------
 % Create fft params structure to pass to all functions 
 % -------------------------------------------------------------------------
@@ -18,7 +18,7 @@ fftparams = struct(field1, win_size,...
 % -------------------------------------------------------------------------
 
 % Import 2-Track
-[x_t, fs, t] = import_audio('Betty Who - All of You.wav');
+[x_t, fs, t] = import_audio('bs_bti_master.wav');
 
 % 1 Second Frames
 frame_window = fs;
@@ -32,10 +32,10 @@ frame_overlap = fs*0.75;
 
 % Create Stem Database
 % -------------------------------------------------------------------------
-filenames = {'drums.wav',...
-             'bass.wav',...
-             'melody.wav',...
-             'vocals.wav'};
+filenames = {'bs_bti_drums.wav',...
+             'bs_bti_bass.wav',...
+             'bs_bti_melody.wav',...
+             'bs_bti_vocals.wav'};
 
 % Get the estimated ground truth weights
 [ frame_coef ] = weight_estimation( filenames, x_t, frame_window, frame_overlap, fftparams );

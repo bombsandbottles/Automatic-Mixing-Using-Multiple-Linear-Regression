@@ -6,47 +6,45 @@
 clear;
 clc;
 
+addpath('/Volumes/LaCie/StemsForMIR/allstems');
+addpath('/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/stem_files');
+
 % -------------------------------------------------------------------------
 % These are the training tracks for pop music mix
 % -------------------------------------------------------------------------
 
-% Song 1, Katy Perry - California Gurls
-[ coef, features ] = katy_perry( );
+% Britney Spears - Break The Ice
+[ coef, features ] = bs_bti( );
 train_coefs{1} = coef;
 test_features{1} = features;
 
-% Song 2, Betty Who All Of You
-[ coef, features ] = katy_perry( );
+% Betty Who All Of You
+[ coef, features ] = bw_aoy( );
 train_coefs{2} = coef;
 test_features{2} = features;
+ 
+% Britney Spears - Break The Ice
+[ coef, features ] = bs_gm( );
+train_coefs{3} = coef;
+test_features{3} = features;
 
-% % Song 2, Betty Who All Of You
-% [ coef, features ] = betty_who( );
-% train_coefs{2} = coef;
-% test_features{2} = features;
-% 
-% % Song 3, Britney Spears - Break The Ice
-% [ coef, features ] = bs_breaktheice( );
-% train_coefs{3} = coef;
-% test_features{3} = features;
-% 
-% % Song 4, Britney Spears - Break The Ice
-% [ coef, features ] = bs_gimmemore( );
-% train_coefs{4} = coef;
-% test_features{4} = features;
-% 
-% % Song 5, Katy Perry - ET
-% [ coef, features ] = katy_perry_et( );
-% train_coefs{5} = coef;
-% test_features{5} = features;
-% 
-% % Song 6, Oh Land - Rennesaince Girls
-% [ coef, features ] = OL_rengirls( );
-% train_coefs{6} = coef;
-% test_features{6} = features;
-% 
-% % Song 7, Lady Gaga - Alejandro
-% [ coef, features ] = lg_alejandro( );
+% Katy Perry - ET
+[ coef, features ] = kp_et( );
+train_coefs{4} = coef;
+test_features{4} = features;
+
+% Lady Gaga - Alejandro
+[ coef, features ] = lg_a( );
+train_coefs{5} = coef;
+test_features{5} = features;
+
+% Oh Land - Rennesaince Girls
+[ coef, features ] = ol_rg( );
+train_coefs{6} = coef;
+test_features{6} = features;
+
+% Katy Perry - California Gurls
+% [ coef, features ] = kp_cg( );
 % train_coefs{7} = coef;
 % test_features{7} = features;
 
@@ -57,7 +55,7 @@ test_features{2} = features;
 % This is the test track
 % -------------------------------------------------------------------------
 % Create the Test Set, (1 file)
-[ ground_truth, test_features ] = katy_perry( );
+[ ground_truth, test_features ] = kp_cg( );
 
 % -------------------------------------------------------------------------
 % Compute the Multiple Linear Regression
@@ -78,19 +76,20 @@ test_features{2} = features;
 % -------------------------------------------------------------------------
 
 % 2-Track Katy Perry
-master = 'Master Section.aif';
+master = 'kp_cg_master.aif';
 
 % Choose the stems you want to auto-mix
-stems = {'drumBus.aif',...
-         'Bass.aif',...
-         'melodyBus.aif',...
-         'Vocals Main.aif'};
+stems = {'kp_cg_drums.aif',...
+         'kp_cg_bass.aif',...
+         'kp_cg_melody.aif',...
+         'kp_cg_vocals.aif'};
      
 % Perform the Mix
 [ mix, fs ] = auto_machine_mix( master, stems, predicted_coefs );
 
-    
-
+% -------------------------------------------------------------------------
+% Plot the ground truth against the predicted weights for a song
+% -------------------------------------------------------------------------
 
 
 

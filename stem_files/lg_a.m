@@ -1,4 +1,4 @@
-function [ frame_coef, features ] = bs_breaktheice( )
+function [ frame_coef, features ] = lg_a( )
 % -------------------------------------------------------------------------
 % Create fft params structure to pass to all functions 
 % -------------------------------------------------------------------------
@@ -18,7 +18,7 @@ fftparams = struct(field1, win_size,...
 % -------------------------------------------------------------------------
 
 % Import 2-Track
-[x_t, fs, t] = import_audio('Master Section.wav');
+[x_t, fs, t] = import_audio('lg_a_master.wav');
 
 % 1 Second Frames
 frame_window = fs;
@@ -32,10 +32,10 @@ frame_overlap = fs*0.75;
 
 % Create Stem Database
 % -------------------------------------------------------------------------
-filenames = {'Drums.wav',...
-             'Bass.wav',...
-             'Melody.wav',...
-             'Vox.wav'};
+filenames = {'lg_a_drums.wav',...
+             'lg_a_bass.wav',...
+             'lg_a_melody.wav',...
+             'lg_a_vocals.wav'};
 
 % Get the estimated ground truth weights
 [ frame_coef ] = weight_estimation( filenames, x_t, frame_window, frame_overlap, fftparams );
