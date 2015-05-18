@@ -3,7 +3,7 @@
 % -------------------------------------------------------------------------
 % Calc Zero Crossing rate on a single frame of audio
 % -------------------------------------------------------------------------
-function [ zcr ] = zero_crossing_rate( stem_frame )
+function [ zcr ] = zero_crossing( stem_frame )
 
 % Initialize ZCR counter
 zcr = 0;

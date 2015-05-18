@@ -52,7 +52,7 @@ test_features{6} = features;
 [ Y_train, alpha_train ] = create_training_sets( train_coefs, test_features );
 
 % -------------------------------------------------------------------------
-% This is the test track
+% This is the test track that will get auto mixed in the end
 % -------------------------------------------------------------------------
 % Create the Test Set, (1 file)
 [ ground_truth, test_features ] = kp_cg( );
@@ -61,10 +61,6 @@ test_features{6} = features;
 % Compute the Multiple Linear Regression
 % -------------------------------------------------------------------------
 [ predicted_coefs ] = compute_MLR( Y_train, alpha_train, test_features );
-
-% plot(coef(1,:));
-% hold on;
-% plot(predicted_coefs(1,:), 'g');
 
 % -------------------------------------------------------------------------
 % Compute the Mean Square Error
@@ -87,20 +83,25 @@ stems = {'kp_cg_drums.aif',...
 % Perform the Mix
 [ auto_mix, fs ] = auto_machine_mix( master, stems, predicted_coefs );
 
+% Write Out
+audiowrite('kp_cg_automix.wav', auto_mix, fs);
+
 % -------------------------------------------------------------------------
 % Plot the ground truth against the predicted weights for a song
 % -------------------------------------------------------------------------
 
 figure;
 
+% Drums
 subplot(4,1,1);
 plot(ground_truth(1,:), 'k');
 hold on;
 plot(predicted_coefs(1,:), 'r');
 title('DRUMS');
 ylabel('Amplitude');
-legend('Ground Truth','Predicted')
+legend('Ground Truth','Predicted');
 
+% Bass
 subplot(4,1,2);
 plot(ground_truth(2,:), 'k');
 hold on;
@@ -108,6 +109,7 @@ plot(predicted_coefs(2,:), 'r');
 title('BASS');
 ylabel('Amplitude');
 
+% Melody
 subplot(4,1,3);
 plot(ground_truth(3,:), 'k');
 hold on;
@@ -115,6 +117,7 @@ plot(predicted_coefs(3,:), 'r');
 title('MELODY');
 ylabel('Amplitude');
 
+% Vocals
 subplot(4,1,4);
 plot(ground_truth(4,:), 'k');
 hold on;
