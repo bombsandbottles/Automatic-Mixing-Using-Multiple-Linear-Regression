@@ -17,55 +17,86 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\citation{pestana2013spectral}
-\citation{ma2013implementation}
-\citation{pestana2013spectral}
+\citation{mansbridge2012implementation}
+\citation{pestana2013automatic}
+\citation{scott2011automatic}
+\citation{scott2011automatic}
+\citation{bittner2014medleydb}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.} Introduction}{1}{section.1}}
 \newlabel{sec:Introduction}{{1}{1}{Introduction}{section.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.} Algorithm and Implementation}{1}{section.2}}
-\newlabel{sec:Algorithm and Implementation}{{2}{1}{Algorithm and Implementation}{section.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1} Creating the Target Spectra}{1}{subsection.2.1}}
-\newlabel{subsec:Creating the Target Spectra}{{2.1}{1}{Creating the Target Spectra}{subsection.2.1}{}}
-\newlabel{eq:mean_freq}{{1}{1}{Creating the Target Spectra}{equation.2.1}{}}
-\newlabel{eq:spectra_normalize}{{2}{1}{Creating the Target Spectra}{equation.2.2}{}}
+\citation{mansbridge2012implementation}
 \citation{ma2013implementation}
+\citation{vickers2001automatic}
+\@writefile{toc}{\contentsline {section}{\numberline {2.} Algorithm and Implementation}{2}{section.2}}
+\newlabel{sec:Algorithm and Implementation}{{2}{2}{Algorithm and Implementation}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1} Ground-Truth Weight Estimation}{2}{subsection.2.1}}
+\newlabel{subsec:Ground-Truth Weight Estimation}{{2.1}{2}{Ground-Truth Weight Estimation}{subsection.2.1}{}}
+\newlabel{eq:System Equation}{{1}{2}{Ground-Truth Weight Estimation}{equation.2.1}{}}
+\newlabel{eq:stftlinear}{{2}{2}{Ground-Truth Weight Estimation}{equation.2.2}{}}
+\newlabel{eq:NNNLS1}{{3}{2}{Ground-Truth Weight Estimation}{equation.2.3}{}}
+\newlabel{eq:EMA}{{4}{2}{Ground-Truth Weight Estimation}{equation.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2} Feature Extraction}{2}{subsection.2.2}}
+\newlabel{subsec:Feature Extraction}{{2.2}{2}{Feature Extraction}{subsection.2.2}{}}
 \citation{rec2006bs}
 \citation{mansbridge2012implementation}
-\citation{mansbridge2012implementation}
-\newlabel{eq:cumulativesum}{{3}{2}{Creating the Target Spectra}{equation.2.3}{}}
-\newlabel{eq:averagespectrum}{{4}{2}{Creating the Target Spectra}{equation.2.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Target equalization curve for a top-40 female pop vocal.}}{2}{figure.1}}
-\newlabel{fig:target}{{1}{2}{Target equalization curve for a top-40 female pop vocal}{figure.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2} Hysteresis Noise Gate and Loudness Measurement}{2}{subsection.2.2}}
-\newlabel{subsec:ysteresis Noise Gate and Loudness Measurement}{{2.2}{2}{Hysteresis Noise Gate and Loudness Measurement}{subsection.2.2}{}}
-\newlabel{eq:ITU-R BS.1770}{{5}{2}{Hysteresis Noise Gate and Loudness Measurement}{equation.2.5}{}}
-\newlabel{eq:EMAloudness}{{6}{2}{Hysteresis Noise Gate and Loudness Measurement}{equation.2.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3} Spectral Analysis}{2}{subsection.2.3}}
-\newlabel{subsec:Spectral Analysis}{{2.3}{2}{Spectral Analysis}{subsection.2.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4} Obtain Desired Magnitude Response}{2}{subsection.2.4}}
-\newlabel{subsec:Obtain Desired Magnitude Response}{{2.4}{2}{Obtain Desired Magnitude Response}{subsection.2.4}{}}
-\newlabel{eq:targetmag}{{7}{2}{Obtain Desired Magnitude Response}{equation.2.7}{}}
-\citation{friedlander1984modified}
-\citation{ma2013implementation}
-\citation{ma2013implementation}
-\bibdata{Zafrin_Harrison_DSTII_FP}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5} Filter Curve Smoothing}{3}{subsection.2.5}}
-\newlabel{subsec:Filter Curve Smoothing}{{2.5}{3}{Filter Curve Smoothing}{subsection.2.5}{}}
-\newlabel{eq:EMAFILTERCURVE}{{8}{3}{Filter Curve Smoothing}{equation.2.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6} Obtaining IIR Coefficients Using the Yule-Walker Method}{3}{subsection.2.6}}
-\newlabel{subsec:Obtaining IIR Coefficients Using the Yule-Walker Method}{{2.6}{3}{Obtaining IIR Coefficients Using the Yule-Walker Method}{subsection.2.6}{}}
-\newlabel{eq:IIRfilter1}{{9}{3}{Obtaining IIR Coefficients Using the Yule-Walker Method}{equation.2.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.7} Applying The Filter}{3}{subsection.2.7}}
-\newlabel{subsec:Applying The Filter}{{2.7}{3}{Applying The Filter}{subsection.2.7}{}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{subfiga}{{1a}{3}{Condition 1.\relax }{subfigure.1.1}{}}
+\newlabel{sub@subfiga}{{a}{3}{Condition 1.\relax }{subfigure.1.1}{}}
+\newlabel{subfigb}{{1b}{3}{Condition 2.\relax }{subfigure.1.2}{}}
+\newlabel{sub@subfigb}{{b}{3}{Condition 2.\relax }{subfigure.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Katy Perry - California Gurls, ground truth weights in black against predicted coefficients in red.\relax }}{3}{figure.1}}
+\newlabel{fig:katyperrycoef}{{1}{3}{Katy Perry - California Gurls, ground truth weights in black against predicted coefficients in red.\relax }{figure.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1} ITU-R BS.1770 Loudness Recommendation}{3}{subsubsection.2.2.1}}
+\newlabel{eq:ITU-R BS.1770}{{5}{3}{ITU-R BS.1770 Loudness Recommendation}{equation.2.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3} Multiple Linear Regression}{3}{subsection.2.3}}
+\newlabel{subsec:Multiple Linear Regression}{{2.3}{3}{Multiple Linear Regression}{subsection.2.3}{}}
+\newlabel{eq:NNNLS2}{{6}{3}{Multiple Linear Regression}{equation.2.6}{}}
+\newlabel{eq:projectionmatrix}{{2.3}{3}{Multiple Linear Regression}{equation.2.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4} Autonomously Mix}{3}{subsection.2.4}}
+\newlabel{subsec:Autonomously Mix}{{2.4}{3}{Autonomously Mix}{subsection.2.4}{}}
+\newlabel{eq:automix}{{8}{3}{Autonomously Mix}{equation.2.8}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.} Results}{3}{section.3}}
 \newlabel{sec:Results}{{3}{3}{Results}{section.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Equalization results for a female pop vocal.}}{3}{figure.2}}
-\newlabel{fig:vocal}{{2}{3}{Equalization results for a female pop vocal}{figure.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.} Conclusion}{3}{section.4}}
-\newlabel{sec:Results}{{4}{3}{Conclusion}{section.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Equalization results on a white noise test.}}{4}{figure.3}}
-\newlabel{fig:whitenoise}{{3}{4}{Equalization results on a white noise test}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1} Top-40/Pop}{4}{subsection.3.1}}
+\newlabel{sec:top40}{{3.1}{4}{Top-40/Pop}{subsection.3.1}{}}
+\newlabel{table:MSE-KP}{{\caption@xref {table:MSE-KP}{ on input line 333}}{4}{Top-40/Pop}{table.caption.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Mean squared error comparing Katy Perry - California Girls ground truth weights against predicted coefficients. Condition 2 adds extra features and substitutes LUFS instead of RMS.\relax }}{4}{table.caption.1}}
+\newlabel{table:MSE-pop}{{\caption@xref {table:MSE-pop}{ on input line 346}}{4}{Top-40/Pop}{table.caption.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Mean squared error across all top-40 songs using leave-one-out cross-validation. Condition 2 performs worse than condition 1 in predicting fader weighting coefficients.\relax }}{4}{table.caption.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2} Rock}{4}{subsection.3.2}}
+\newlabel{sec:rock}{{3.2}{4}{Rock}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3} Cross-Genre}{4}{subsection.3.3}}
+\newlabel{sec:crossgenere}{{3.3}{4}{Cross-Genre}{subsection.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Average magnitude spectra of human engineered and autonomously engineered mixes for Lady Gaga - Alejandro. They are relatively similar, and the mean squared error corresponds to the differences in the frequency domain based on instrument.\relax }}{4}{figure.caption.3}}
+\newlabel{fig:spectra_gaga}{{2}{4}{Average magnitude spectra of human engineered and autonomously engineered mixes for Lady Gaga - Alejandro. They are relatively similar, and the mean squared error corresponds to the differences in the frequency domain based on instrument.\relax }{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The difference between ground truth $|X_{groundtruth}(\omega )|$ and $|X_{predicted}(\omega )|, $ $ \omega \in (0,\pi )$ .\relax }}{4}{figure.caption.4}}
+\newlabel{fig:difference_gaga}{{3}{4}{The difference between ground truth $|X_{groundtruth}(\omega )|$ and $|X_{predicted}(\omega )|, $ $ \omega \in (0,\pi )$ .\relax }{figure.caption.4}{}}
+\newlabel{tabel:crossgenre}{{\caption@xref {tabel:crossgenre}{ on input line 386}}{4}{Cross-Genre}{table.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Mean squared error comparing Britney Spears - Break The Ice ground truth weights against predicted coefficients. The training data here is from the rock genre dataset, creating some subjectively unpleasant results.\relax }}{4}{table.caption.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.} Conclusion}{4}{section.4}}
+\newlabel{sec:Conclusion}{{4}{4}{Conclusion}{section.4}{}}
+\citation{perez2010real}
+\citation{de2013knowledge}
+\citation{scott2013instrument}
+\bibdata{Zafrin_Chudwick_MIRFP}
+\bibcite{mansbridge2012implementation}{1}
+\bibcite{pestana2013automatic}{2}
+\bibcite{scott2011automatic}{3}
+\bibcite{bittner2014medleydb}{4}
+\newlabel{subfiga}{{4a}{5}{Condition 1.\relax }{subfigure.4.1}{}}
+\newlabel{sub@subfiga}{{a}{5}{Condition 1.\relax }{subfigure.4.1}{}}
+\newlabel{subfigb}{{\caption@xref {subfigb}{ on input line 400}}{5}{Cross-Genre}{subfigure.4.1}{}}
+\newlabel{sub@subfigb}{{a}{5}{Cross-Genre}{subfigure.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The spectra here is morphed from a typical top-40 spectra exhibiting a decrease in the low frequencies. This results in a much lighter sounding track with a flatter spectra, making the mix sound unbalanced as the upper frequencies mask the low frequencies.\relax }}{5}{figure.4}}
+\newlabel{fig:crossgenre}{{4}{5}{The spectra here is morphed from a typical top-40 spectra exhibiting a decrease in the low frequencies. This results in a much lighter sounding track with a flatter spectra, making the mix sound unbalanced as the upper frequencies mask the low frequencies.\relax }{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.} References}{5}{section.5}}
+\bibcite{ma2013implementation}{5}
+\bibcite{vickers2001automatic}{6}
+\bibcite{rec2006bs}{7}
+\bibcite{perez2010real}{8}
+\bibcite{de2013knowledge}{9}
+\bibcite{scott2013instrument}{10}

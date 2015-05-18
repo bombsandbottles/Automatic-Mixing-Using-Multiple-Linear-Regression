@@ -14,7 +14,8 @@ addpath('/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-R
 % -------------------------------------------------------------------------
 
 % Britney Spears - Break The Ice
-[ coef, features ] = bs_bti( );
+% [ coef, features ] = bs_bti( );
+[ coef, features ] = lg_a( );
 train_coefs{1} = coef;
 test_features{1} = features;
 
@@ -44,7 +45,6 @@ train_coefs{6} = coef;
 test_features{6} = features;
 
 % Katy Perry - California Gurls
-% [ coef, features ] = kp_cg( );
 % train_coefs{7} = coef;
 % test_features{7} = features;
 
@@ -55,7 +55,7 @@ test_features{6} = features;
 % This is the test track that will get auto mixed in the end
 % -------------------------------------------------------------------------
 % Create the Test Set, (1 file)
-[ ground_truth, test_features ] = lg_a( );
+[ ground_truth, test_features ] = bs_bti( );
 
 % -------------------------------------------------------------------------
 % Compute the Multiple Linear Regression
@@ -72,20 +72,20 @@ test_features{6} = features;
 % -------------------------------------------------------------------------
 
 % 2-Track Katy Perry
-master = 'lg_a_master.wav';
+master = 'bs_bti_master.wav';
 
 % Choose the stems you want to auto-mix
-stems = {'lg_a_drums.wav',...
-         'lg_a_bass.wav',...
-         'lg_a_melody.wav',...
-         'lg_a_vocals.wav'};
+stems = {'bs_bti_drums.wav',...
+         'bs_bti_bass.wav',...
+         'bs_bti_melody.wav',...
+         'bs_bti_vocals.wav'};
      
 % Perform the Mix
 [ auto_mix, fs ] = auto_machine_mix( master, stems, predicted_coefs );
 auto_mix = auto_mix / abs(max(auto_mix));
 
 % Write Out
-audiowrite('lg_a_automix_extrafeatures.wav', auto_mix, fs);
+audiowrite('cross_genre.wav', auto_mix, fs);
 
 % -------------------------------------------------------------------------
 % Plot the ground truth against the predicted weights for a song
