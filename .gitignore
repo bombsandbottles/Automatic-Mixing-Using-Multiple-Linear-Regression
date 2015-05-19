@@ -3,8 +3,5 @@
 *.mp3
 *.aif
 
-#Ignore pdf
-*.pdf
-
 #Ignore edited MATLAB
 *.m~
