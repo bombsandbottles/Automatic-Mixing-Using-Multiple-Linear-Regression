@@ -1,9 +1,5 @@
 % Harrison Zafrin / Collin Chudwick
-% MIR Final Paper
-% ===========================================
-% Template for ICMC 2015 (version2)
-% adapted from earlier LaTeX paper templates for the ICMC, SMC, etc...
-% ===========================================
+% MIR - Final Paper
 %----------------------------------------------------------------------------------------
 % PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
@@ -150,13 +146,17 @@ In this paper, an autonomous mixing system is implemented using machine learning
 \section{Introduction}
 \label{sec:Introduction}
 
-Often the last stage of the songwriting/production process, mixing ensures that the final product is perceived in the fashion which it was intended.  A more textbook definition for mixing can be given as the combination of multiple audio signals, modifying them from an amplitude, spatial, and spectral level as a means of creating a cohesive whole.  As a professional music producer, the author understands the plight and struggle of pouring tens of hours into a mix down only to wind up being disappointed when hearing the final product compared against another song.  Mixing is also notoriously difficult, requiring years of experience, expert taste, and fine tuned hearing.  If the producer/artist can't mix the song to satisfaction, he/she is left with no other choice but to hire professional help.  The goal of this research is to eliminate this struggle, and shift the focus back to writing phenomenal music.
+% Often the last stage of the songwriting/production process, mixing ensures that the final product is perceived in the fashion which it was intended.  A more textbook definition for mixing can be given as the combination of multiple audio signals, modifying them from an amplitude, spatial, and spectral level as a means of creating a cohesive whole.  As professional music producers and engineers, the authors understand the plight and struggle of pouring tens of hours into a mix down only to wind up being disappointed when hearing the final product compared against another song.  Mixing is also notoriously difficult, requiring years of experience, expert taste, and fine tuned hearing.  If the producer/artist can't mix the song to satisfaction, he/she is left with no other choice but to hire professional help.  The goal of this research is to eliminate this struggle, and shift the focus back to writing phenomenal music.
 
-As can be expected to those with experience in audio engineering, the mix down process can be thought of as a mathematical summation of $N$ total tracks with varying weight.  Currently there are three main models built to decide \textbf{how} an autonomous system deals with assigning those weighting coefficients.  The first are models built upon a cross adaptive approach, meaning the systems decisions are informed by other variables in the system \cite{mansbridge2012implementation}.  The second are known as knowledge engineered systems, which operate around a predefined set of rules based upon best mixing practices.  The best definition as to what defines ``best mixing practices''can be found in a comprehensive review of the audio engineering literature recently conducted by Pedro Pestana \cite{pestana2013automatic}.  These rules allow a dimension of semantic data to be incorporated into the model as opposed to relying solely on the extraction of low-level audio features.  The third model which is the focus of this paper revolves around a machine learning, using training data as a means of informing future decisions.  Therefore, if the mix down is a quantifiable process, theoretically a system can be trained on professionally mixed tracks and match those idealized targets to raw data \cite{scott2011automatic}.
+Among the stages involved in studio music production, the art of mixing plays a pivotal role between tracking and mastering.  Since it is the primary process that determines the balance of the final recording, it is an essential step that is often considered an artistic job done by a skilled and experienced engineer who is also trusted by the lead artists to follow the aesthetic of the song.  Due to this fact that record production is never complete without mixing, a difficult situation can easily arise for any artist who is preparing a demo recording of their own song but struggles with writing and recording in anticipation for the mixing phase.  Interestingly, the growth of digital music that has developed over the past couple decades and had a direct impact on the increased importance and skill required of mixing has simultaneously given an incredible amount of power to smaller-budget artists who can record, mix and master entirely on their personal computer.  
 
-This research will specifically emulate and expand upon the work of Scott et al. \cite{scott2011automatic} by comparing estimated weighting coefficients computed through non-negative least squares minimization of a songs stems spectrograms to weighting coefficients computed through multiple linear regression of a number of stem features.  Once weighting coefficients have been estimated, new mixes can be made that follow the coefficients in an attempt to compare the success of various variables, specifically through both listening tests and measures of the mean square error.  This approach allows for simple comparison between the values of certain features and their difference among two prominent genres: pop and rock.  Specifically, the pop genre will create training sets based on the following stems from top-40 pop female artists: Britney Spears - “Break The Ice”, Betty Who - “All Of You”, Britney Spears - “Gimme More”, Katy Perry - “E.T.”, Katy Perry - “California Gurls”, Oh Land - “Renaissance Girls”.  The resultant coefficients will be analyzed on the stems found in Lady Gaga - “Alejandro”.  Similarly, the rock genre will create training sets based on the following stems provided by MedleyDB and Bittner et al. \cite{bittner2014medleydb}: The Districts - “Vermont”, The Scarlet Brand - “Les Fleurs Du Mal”, Purling Hiss - “Lolita”, Meaxic - “You Listen”, Meaxic - “Take A Step”, Creepoid - “Old Tree”, The So So Glos - “Emergency”.  The resultant coefficients will be analyzed on the stems found in Big Troubles - “Phantom”. 
+This situation has caused a specific problem in the record production industry: without the skills and experience of a professional audio mixer, artists may become distracted and ultimately hampered by the notion of a mixing phase that will be an essential part of their record.  This could lead to focus being taking away from the songwriting process or worse, artists being led to choices based on the results of poor mixes.  It is therefore the goal of this research to help eliminate the presented problem by providing artists with intelligent mixing tools.  These tools aim to allow artists to automatically create mixes of their recorded tracks that sound balanced and professional, thereby reducing the consideration required by artists for their mixes.  
+
+As can be expected to those with experience in audio engineering, the mix down process can be thought of as a mathematical summation of $N$ total tracks with varying weight.  Currently there are three main models built to decide \textbf{how} an autonomous system deals with assigning those weighting coefficients.  The first are models built upon a cross adaptive approach, meaning the systems decisions are informed by other variables in the system \cite{mansbridge2012implementation}.  The second are known as knowledge engineered systems, which operate around a predefined set of rules based upon best mixing practices.  The best definition as to what defines ``best mixing practices''can be found in a comprehensive review of the audio engineering literature recently conducted by Pedro Pestana \cite{pestana2013automatic}.  These rules allow a dimension of semantic data to be incorporated into the model as opposed to relying solely on the extraction of low-level audio features.  The third model which is the focus of this paper revolves around machine learning, using training data as a means of informing future decisions.  Therefore, if the mix down is a quantifiable process, theoretically a system can be trained on professionally mixed tracks and match those idealized targets to raw data \cite{scott2011automatic}.
+
+This experiment will specifically emulate and expand upon the work of Scott et al. \cite{scott2011automatic} by comparing estimated ground truth weighting coefficients computed through non-negative least squares minimization to predicted weighting coefficients computed through multiple linear regression.  Once weighting coefficients have been estimated, new mixes can be made that follow the coefficients in an attempt to compare the success of various variables, specifically through both listening tests and measures of the mean square error.  This approach allows for simple comparison between the values of certain features and their difference among two prominent genres: pop and rock.  Specifically, the pop genre will create training sets based on the following stems from top-40 pop female artists: Britney Spears - “Break The Ice”, Betty Who - “All Of You”, Britney Spears - “Gimme More”, Katy Perry - “E.T.”, Katy Perry - “California Gurls”, Oh Land - “Renaissance Girls”.  The resultant coefficients will be analyzed on the stems found in Lady Gaga - “Alejandro”.  Similarly, the rock genre will create training sets based on the following stems provided by MedleyDB and Bittner et al. \cite{bittner2014medleydb}: The Districts - “Vermont”, The Scarlet Brand - “Les Fleurs Du Mal”, Purling Hiss - “Lolita”, Meaxic - “You Listen”, Meaxic - “Take A Step”, Creepoid - “Old Tree”, The So So Glos - “Emergency”.  The resultant coefficients will be analyzed on the stems found in Big Troubles - “Phantom”. 
 	
-The paper is broken up as follows: Section \ref{sec:Algorithm and Implementation} includes a discussion of the specific algorithms and implementation utilized in the research.  It specifically covers weight estimation in section \ref{subsec:Ground-Truth Weight Estimation}, feature extraction in section \ref{subsec:Feature Extraction}, multiple linear regression in section \ref{subsec:Multiple Linear Regression}, and finally top-down combination of these various elements in section \ref{subsec:Autonomously Mix} that produce the final results and accuracy of the algorithms used.  Section \ref{sec:Results} provides a detailed analysis of the experimental results, including a number of numerical and auditory displays for analysis of the algorithms success.  Finally, section \ref{sec:Conclusion} ends the paper by drawing relevant conclusions for automatic mixing based on our implementation and results, as well as providing direction for future study. 
+% The paper is broken up as follows: Section \ref{sec:Algorithm and Implementation} includes a discussion of the specific algorithms and implementation utilized in the research.  It specifically covers weight estimation in section \ref{subsec:Ground-Truth Weight Estimation}, feature extraction in section \ref{subsec:Feature Extraction}, multiple linear regression in section \ref{subsec:Multiple Linear Regression}, and finally top-down combination of these various elements in section \ref{subsec:Autonomously Mix} that produce the final results and accuracy of the algorithms used.  Section \ref{sec:Results} provides a detailed analysis of the experimental results, including a number of numerical and auditory displays for analysis of the algorithms success.  Finally, section \ref{sec:Conclusion} ends the paper by drawing relevant conclusions for automatic mixing based on our implementation and results, as well as providing direction for future study. 
 
 %----------------------------------------------------------------------------------------
 % ALGORITHM AND IMPLEMENTATION
@@ -320,7 +320,23 @@ To evaluate the performance of the system, a leave-one-out cross-validation meth
 \subsection{Top-40/Pop}
 \label{sec:top40}
 
-Despite our small sample size of $(N = 7)$ for top-40 pop songs, the results are surprisingly good.  As we can see in figure \ref{fig:crossgenre}, our predicted coefficients for condition 1 are relatively accurate compared to the ground truths.  Unfortunately, we see a slight decrease in performance when evaluating under condition 2 which indicates that the new combination of features is less representative of weighting coefficients compared the original implementation.  Where table \ref{table:MSE-K} shows the mean square error across one song, table \ref{table:MSE-pop} shows the averaged mean squared error across all songs and instruments under both test conditions.  Since the Fourier transform can be viewed as the linear combination of our weighted amplitudes in the frequency domain, we also plot the difference between the human engineered magnitude spectrum and the current automatically generated results in figure \ref{fig:difference_gaga}.
+\begin{figure*}[!htbp]
+\centering
+\begin{subfigure}{\columnwidth}
+\includegraphics[height=200px, width=\columnwidth]{Plot_1_1.eps}%
+\caption{Condition 1.}
+\label{subfiga}%
+\end{subfigure}%\hfill%
+\begin{subfigure}{\columnwidth}
+\includegraphics[height=200px, width=\columnwidth]{Plot_1.eps}%
+\caption{Condition 2.}
+\label{subfigb}%
+\end{subfigure}%\hfill%
+\caption{Big Troubles - Phantom, ground truth weights in black against predicted weights in red..}
+\label{fig:bigtroubles}
+\end{figure*}
+
+Despite our small sample size of $(N = 7)$ for top-40 pop songs, the results are surprisingly good.  As we can see in figure \ref{fig:crossgenre}, our predicted coefficients for condition 1 are relatively accurate compared to the ground truths.  Unfortunately, we see a slight decrease in performance when evaluating under condition 2 which indicates that the new combination of features is less representative of weighting coefficients compared the original implementation.  Where table \ref{table:MSE-KP} shows the mean square error across one song, table \ref{table:MSE-pop} shows the averaged mean squared error across all songs and instruments under both test conditions.  Since the Fourier transform can be viewed as the linear combination of our weighted amplitudes in the frequency domain, we also plot the difference between the human engineered magnitude spectrum and the current automatically generated results in figure \ref{fig:difference_gaga}.
 
 \begin{table}[h]
 \centering
@@ -330,9 +346,9 @@ Drums  & 0.0204      & 0.0214      \\
 Bass   & 0.1937      & 0.3118      \\
 Melody & 0.0693      & 0.0924      \\
 Vocals & 0.0438      & 0.0671      \\ \hline
-\label{table:MSE-KP}
 \end{tabular}
 \caption{Mean squared error comparing Katy Perry - California Girls ground truth weights against predicted coefficients.  Condition 2 adds extra features and substitutes LUFS instead of RMS.}
+\label{table:MSE-KP}
 \end{table}
 
 \begin{table}[h]
@@ -343,9 +359,9 @@ Drums  & 0.0850      & 0.1648      \\
 Bass   & 0.0174      & 0.1003      \\
 Melody & 0.0775      & 0.1074      \\
 Vocals & 0.1100      & 0.1126      \\ \hline
-\label{table:MSE-pop}
 \end{tabular}
 \caption{Mean squared error across all top-40 songs using leave-one-out cross-validation.  Condition 2 performs worse than condition 1 in predicting fader weighting coefficients.}
+\label{table:MSE-pop}
 \end{table}
 
 \begin{figure}[h]
@@ -358,7 +374,7 @@ Vocals & 0.1100      & 0.1126      \\ \hline
 
 \begin{figure}[h]
 \centering{\columnwidth}
-\includegraphics[height=100px, [width=\columnwidth]{lg_a_difference.eps}
+\includegraphics[height=150px, [width=\columnwidth]{lg_a_difference.eps}
 \caption{The difference between ground truth $|X_{groundtruth}(\omega)|$ and $|X_{predicted}(\omega)|, $ $ \omega \in (0,\pi)$ .}
 \label{fig:difference_gaga}
 \end{figure}
@@ -367,6 +383,51 @@ Vocals & 0.1100      & 0.1126      \\ \hline
 %----------------------------------------------------------------------------------------
 \subsection{Rock}
 \label{sec:rock}
+
+When applying the aforementioned processing to the various rock tracks, it is clear that the algorithm is less successful through both the resultant autonomous mix as well as the mean square error.  As seen in figure \ref{fig:bigtroubles} significant discrepancies appear between the ground truth and predicted mixing coefficients.  This visual difference is supported by Table A where the MSE is shown for each track and particular observation can be made of the drum coefficients which produce astronomical MSE numbers.  Similarly, the difference in frequency spectra in figures \ref{fig:spectra_rock} and \ref{fig:difference_rock} shows how drastic this difference is, specifically in the lower frequencies below 300 Hz and the higher frequencies above 4 kHz.  The coefficients clearly mirror the pop results by producing a significant loss of lower frequencies, resulting in a mix that is noticeably heavy in the midrange.  
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ccc}
+Track  & Condition 1 & Condition 2 \\ \hline
+Drums  & 29.9624      & 28.1907      \\
+Bass   & 2.8916       & 2.4489      \\
+Melody & 0.1929       & 0.2087      \\
+Vocals & 0.1602       & 0.2750      \\ \hline
+\end{tabular}
+\caption{Mean squared error comparing Big Troubles - Phantom ground truth weights with predicted coefficients.  Condition 2 adds extra features and substitutes LUFS for RMS.}
+\label{table:MSE-rock1}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ccc}
+Track  & Condition 1 & Condition 2 \\ \hline
+Drums  & 11.33758 \mp 16.85312      & 13.96146 \mp 16.00094     \\
+Bass   & 2.08244 \mp 1.81634      & 2.03802 \mp 1.95372      \\
+Melody & 0.30692 \mp 0.52348       & 0.24994 \mp 0.32676      \\
+Vocals & 1.10308 \mp 2.74372       & 1.00838 \mp 2.93202      \\ \hline
+\end{tabular}
+\caption{Mean squared error across five rock songs using leave-one-out cross-validation.  Condition 2 performs similarly to Condition 1, with less accuracy for the drums but more accuracy for the melody.}
+\label{table:MSE-rock2}
+\end{table}
+
+Although the results for mixes classified under the rock genre appear to be incredibly poor, analysis using leave-one-out cross-validation provides important insights into the nature of the error by utilizing various other test tracks.  Interestingly, the MSE during cross-validation changes drastically, as can be seen in Table B where the average MSE, as well as its range among test tracks, are shown using five different tracks for testing.  Clearly this difference provides a strong indication of the variety among songs used in the analysis, which speaks to the difficulties inherent in broad genre classification.
+
+\begin{figure}[h]
+\begin{center}{\columnwidth}
+\includegraphics[height=150px, [width=0.9\columnwidth]{Plot_2_1.eps}
+\caption{Magnitude spectra of human engineered and autonomously engineered mixes for Big Troubles - Phantom. They are noticeable dissimilar, and the mean squared error corresponds to the differences in the frequency domain based on instrument.}
+\label{fig:spectra_rock}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\centering{\columnwidth}
+\includegraphics[height=150px, [width=\columnwidth]{Plot_3_1.eps}
+\caption{The difference between ground truth $|X_{groundtruth}(\omega)|$ and $|X_{predicted}(\omega)|, $ $ \omega \in (0,\pi)$ .}
+\label{fig:difference_rock}
+\end{figure}
 
 % CROSS-GENRE
 %----------------------------------------------------------------------------------------
@@ -383,9 +444,9 @@ Drums  & 0.1706           \\
 Bass   & 0.0564           \\
 Melody & 0.0267          \\
 Vocals & 0.1337           \\ \hline
-\label{tabel:crossgenre}
 \end{tabular}
 \caption{Mean squared error comparing Britney Spears - Break The Ice ground truth weights against predicted coefficients.  The training data here is from the rock genre dataset, creating some subjectively unpleasant results.}
+\label{tabel:crossgenre}
 \end{table}
 
 \begin{figure*}[!htbp]
@@ -409,13 +470,15 @@ Vocals & 0.1337           \\ \hline
 \section{Conclusion}
 \label{sec:Conclusion}
 
-While a machine learning based autonomous mixing system was implemented successfully, its validity is weakened by the systems assumptions and limitations. While it is convenient to simplify the mix down into the summation of 4 separate channels, this does not represent how a mix is performed in reality.  One possibility for the future is to perform this same analysis in a recursive fashion such that this algorithm is applied to each of the 4 bus channels.  If this were to be implemented, we would then gain insight into the coefficients which sum to create the stems used in this experiment.  While this sounds good on paper, further inspection reveals that this process still requires the consolidating of data such that each bus contains the same number of elements and the same instrument classes.  Once again, this is not a valid assumption to make about a mix down as all songs have different instrumentation regardless of genre.
+The difference between the success of the algorithm for the pop genre versus the rock genre introduces an important consideration for this research.  Clearly the pop genre contained training and testing data from professionally recorded, homogeneous pop songs while the rock genre contained data from songs that were significantly less consistent.  For example, the training songs used could be classified as sub-genres ranging from shoe-gaze rock (Big Troubles - Phantom) to indie rock (The Districts - Vermont) and from punk rock (Meaxic - Take A Step) to classic rock (The Scarlet Brand - Les Fleurs Du Mal).  Because these subsets of the rock genre contain varying approaches to songwriting and track balance in particular, the comparatively poor predicted coefficients open the door for further analysis into the different artistic approaches to mixing among genres.  
+
+Therefore, while a machine learning based autonomous mixing system was implemented successfully, its validity is weakened by the systems assumptions and limitations. While it is convenient to simplify the mix down into the summation of 4 separate channels, this does not represent how a mix is performed in reality.  One possibility for the future is to perform this same analysis in a recursive fashion such that this algorithm is applied to each of the 4 bus channels.  If this were to be implemented, we would then gain insight into the coefficients which sum to create the stems used in this experiment.  While this sounds good on paper, further inspection reveals that this process still requires the consolidating of data such that each bus contains the same number of elements and the same instrument classes.  Once again, this is not a valid assumption to make about a mix down as all songs have different instrumentation regardless of genre. 
 
 Despite this, we attempted to improve the accuracy of this system by increasing the number of features which would characterize a stem and substitute the models calculation of loudness for a more modern widely accepted measure.  To our disappointment, objective evaluation shows that our version of feature extraction consistently performs worse than the previously implemented paradigm.  Oddly though, the authors find condition 2 to be subjectively more pleasing.  It's possible these subjective results can be attributed to the more stable coefficient values as seen in figure \ref{fig:katyperrycoef}, possibly giving off the perceptual quality of a more stable dynamic range between tracks.  Future research may want to experiment with expanding this model to incorporate the consideration of stereo field.  Unfortunately to the authors knowledge, there is no study which attempts to extract panning coefficients from professionally mixed data.  However, once the depth of this model is expanded, the methods in \cite{perez2010real} may be utilized to reduce masking between tracks which occupy the same fundamental frequency range.
 
-One immediate source of data this research provides is genre/instrument specific weighting coefficients.  In the future, it would be immensely useful to test whether or not a system can identify a genre and instrument class based upon ground truth weighting coefficients.  At the very least, an analysis can be conducted which attempts to find patterns between these measures, helping mix engineers in the future make knowledge informed decisions, or incorporating this data into a knowledge engineered cross adaptive system such as in \cite{de2013knowledge} or \cite{scott2013instrument}.
+One immediate source of data this research provides is genre and instrument specific weighting coefficients.  In the future, it would be immensely useful to test whether or not a system can identify a genre and instrument class based upon ground truth weighting coefficients.  At the very least, an analysis can be conducted which attempts to find patterns between these measures, helping mix engineers in the future make knowledge informed decisions, or incorporating this data into a knowledge engineered cross adaptive system such as in \cite{de2013knowledge} or \cite{scott2013instrument}.
 
-The state of the music industry is one where anyone with a laptop and an idea can create a song.  Excluding the valid reasons outlined in section \ref{Introduction} for pursuing this research, a huge market is waiting for this technology to exist.  Autonomous mastering has already made it to market in the form of Landr (https://www.landr.com/), created and engineered by many of the leading researchers referenced in this paper.  The authors believe that the data and methods presented here are convincing enough to pursue further, and looks forward to future developments in the field.
+The state of the music industry is one where anyone with a laptop and an idea can create a song.  Excluding the valid reasons outlined in section \ref{sec:Introduction} for pursuing this research, a huge market is waiting for this technology to exist.  Autonomous mastering has already made it to market in the form of Landr (https://www.landr.com/), created and engineered by many of the leading researchers referenced in this paper.  The authors believe that the data and methods presented here are convincing enough to pursue further, and looks forward to future developments in the field.
 
 %----------------------------------------------------------------------------------------
 % Bibliography

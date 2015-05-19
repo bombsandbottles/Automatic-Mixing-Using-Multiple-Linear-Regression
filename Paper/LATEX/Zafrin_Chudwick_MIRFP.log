@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 MAY 2015 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 MAY 2015 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,7 +309,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77   \graphicspath
+l.73   \graphicspath
                     {{./figures/}}
 The package graphicx has already been loaded with options:
   []
@@ -323,7 +323,7 @@ Try typing  <return>  to proceed.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+Package hyperref Info: Option `colorlinks' set `true' on input line 100.
 
 (/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regressi
 on/Paper/LATEX/Zafrin_Chudwick_MIRFP.aux
@@ -339,24 +339,36 @@ LaTeX Warning: Label `subfigb' multiply defined.
 
 LaTeX Warning: Label `sub@subfigb' multiply defined.
 
+
+LaTeX Warning: Label `subfiga' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfiga' multiply defined.
+
+
+LaTeX Warning: Label `subfigb' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfigb' multiply defined.
+
 )
 \openout1 = `Zafrin_Chudwick_MIRFP.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 133.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 129.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -399,7 +411,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 137.
 )
-Package hyperref Info: Link coloring ON on input line 133.
+Package hyperref Info: Link coloring ON on input line 129.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -407,9 +419,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count121
 )
-LaTeX Info: Redefining \ref on input line 133.
-LaTeX Info: Redefining \pageref on input line 133.
-LaTeX Info: Redefining \nameref on input line 133.
+LaTeX Info: Redefining \ref on input line 129.
+LaTeX Info: Redefining \pageref on input line 129.
+LaTeX Info: Redefining \nameref on input line 129.
 
 (/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regressi
 on/Paper/LATEX/Zafrin_Chudwick_MIRFP.out)
@@ -419,31 +431,31 @@ on/Paper/LATEX/Zafrin_Chudwick_MIRFP.out)
 \openout3 = `Zafrin_Chudwick_MIRFP.out'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 137.
-LaTeX Font Info:    Try loading font information for U+msa on input line 137.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Try loading font information for U+msa on input line 133.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 137.
+LaTeX Font Info:    Try loading font information for U+msb on input line 133.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 137.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 137.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 133.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 137.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 133.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
 
-Overfull \hbox (13.64569pt too wide) in paragraph at lines 143--144
+Overfull \hbox (13.64569pt too wide) in paragraph at lines 139--140
 \OT1/ptm/m/it/10 ex-per-i-ment, visit https://github.com/bombsandbottles/Automa
 tic-
  []
@@ -576,6 +588,9 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
+Underfull \vbox (badness 1776) has occurred while \output is active []
+
+
 ! LaTeX Error: \begin{equation} on input line 186 ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -650,7 +665,7 @@ Package epstopdf Info: Source file: <kp_cg.eps>
  kp_cg.eps>
 (epstopdf)             \includegraphics on input line 215.
 Package epstopdf Info: Output file is already uptodate.
-<kp_cg-eps-converted-to.pdf, id=90, 1444.39626pt x 800.9925pt>
+<kp_cg-eps-converted-to.pdf, id=82, 1444.39626pt x 800.9925pt>
 File: kp_cg-eps-converted-to.pdf Graphic file (type pdf)
 <use kp_cg-eps-converted-to.pdf>
 Package pdftex.def Info: kp_cg-eps-converted-to.pdf used on input line 215.
@@ -665,7 +680,7 @@ Package epstopdf Info: Source file: <kp_cg_extrafeatures.eps>
 nverted-to.pdf kp_cg_extrafeatures.eps>
 (epstopdf)             \includegraphics on input line 220.
 Package epstopdf Info: Output file is already uptodate.
-<kp_cg_extrafeatures-eps-converted-to.pdf, id=91, 1445.4pt x 800.9925pt>
+<kp_cg_extrafeatures-eps-converted-to.pdf, id=83, 1445.4pt x 800.9925pt>
 File: kp_cg_extrafeatures-eps-converted-to.pdf Graphic file (type pdf)
 <use kp_cg_extrafeatures-eps-converted-to.pdf>
 Package pdftex.def Info: kp_cg_extrafeatures-eps-converted-to.pdf used on input
@@ -895,21 +910,40 @@ my insertion and my current dilemma will both disappear.
 ssion/Paper/LATEX/kp_cg-eps-converted-to.pdf> </Users/harrison/Desktop/Github/A
 utomatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/kp_cg_extrafeature
 s-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `table:MSE-K' on page 4 undefined on input line 323.
-
-
-Package caption Warning: \label without proper \caption on input line 346.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:MSE-pop' on page 4 undefined on input line 323.
-
-
+Package epstopdf Info: Source file: <Plot_1_1.eps>
+(epstopdf)                    date: 2015-05-18 15:42:29
+(epstopdf)                    size: 33696 bytes
+(epstopdf)             Output file: <Plot_1_1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-18 15:45:28
+(epstopdf)                    size: 25112 bytes
+(epstopdf)             Command: <repstopdf --outfile=Plot_1_1-eps-converted-to.
+pdf Plot_1_1.eps>
+(epstopdf)             \includegraphics on input line 326.
+Package epstopdf Info: Output file is already uptodate.
+<Plot_1_1-eps-converted-to.pdf, id=132, 562.1pt x 421.575pt>
+File: Plot_1_1-eps-converted-to.pdf Graphic file (type pdf)
+<use Plot_1_1-eps-converted-to.pdf>
+Package pdftex.def Info: Plot_1_1-eps-converted-to.pdf used on input line 326.
+(pdftex.def)             Requested size: 243.91113pt x 200.75195pt.
+Package epstopdf Info: Source file: <Plot_1.eps>
+(epstopdf)                    date: 2015-05-18 15:42:29
+(epstopdf)                    size: 33736 bytes
+(epstopdf)             Output file: <Plot_1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-18 15:45:29
+(epstopdf)                    size: 26424 bytes
+(epstopdf)             Command: <repstopdf --outfile=Plot_1-eps-converted-to.pd
+f Plot_1.eps>
+(epstopdf)             \includegraphics on input line 331.
+Package epstopdf Info: Output file is already uptodate.
+<Plot_1-eps-converted-to.pdf, id=133, 562.1pt x 421.575pt>
+File: Plot_1-eps-converted-to.pdf Graphic file (type pdf)
+<use Plot_1-eps-converted-to.pdf>
+Package pdftex.def Info: Plot_1-eps-converted-to.pdf used on input line 331.
+(pdftex.def)             Requested size: 243.91113pt x 200.75195pt.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.352 \begin{center}{\columnwidth}
+l.368 \begin{center}{\columnwidth}
                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -918,7 +952,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.352 \begin{center}{\columnwidth}
+l.368 \begin{center}{\columnwidth}
                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -934,16 +968,16 @@ See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.353 ...h]{auto_mix_spectra-eps-converted-to.pdf}
+l.369 ...h]{auto_mix_spectra-eps-converted-to.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<auto_mix_spectra-eps-converted-to.pdf, id=142, 1233.60875pt x 549.05125pt>
+<auto_mix_spectra-eps-converted-to.pdf, id=138, 1233.60875pt x 549.05125pt>
 File: auto_mix_spectra-eps-converted-to.pdf Graphic file (type pdf)
 <use auto_mix_spectra-eps-converted-to.pdf>
 Package pdftex.def Info: auto_mix_spectra-eps-converted-to.pdf used on input li
-ne 353.
+ne 369.
 (pdftex.def)             Requested size: 225.52231pt x 100.37537pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -951,7 +985,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.360 \centering{\columnwidth}
+l.376 \centering{\columnwidth}
                               
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -960,7 +994,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.360 \centering{\columnwidth}
+l.376 \centering{\columnwidth}
                               
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -976,7 +1010,7 @@ See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.361 ...[width=\columnwidth]{lg_a_difference.eps}
+l.377 ...[width=\columnwidth]{lg_a_difference.eps}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -989,17 +1023,442 @@ Package epstopdf Info: Source file: <lg_a_difference.eps>
 (epstopdf)                    size: 12358 bytes
 (epstopdf)             Command: <repstopdf --outfile=lg_a_difference-eps-conver
 ted-to.pdf lg_a_difference.eps>
-(epstopdf)             \includegraphics on input line 361.
+(epstopdf)             \includegraphics on input line 377.
 Package epstopdf Info: Output file is already uptodate.
-<lg_a_difference-eps-converted-to.pdf, id=143, 561.09625pt x 421.575pt>
+<lg_a_difference-eps-converted-to.pdf, id=139, 561.09625pt x 421.575pt>
 File: lg_a_difference-eps-converted-to.pdf Graphic file (type pdf)
 <use lg_a_difference-eps-converted-to.pdf>
 Package pdftex.def Info: lg_a_difference-eps-converted-to.pdf used on input lin
-e 361.
-(pdftex.def)             Requested size: 133.59564pt x 100.37537pt.
+e 377.
+(pdftex.def)             Requested size: 200.39346pt x 150.56305pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
-[]\OT1/ptm/b/n/8 Figure 3\OT1/ptm/m/n/10 : |The dif-fer-ence be-tween ground tr
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+[]\OT1/ptm/b/n/8 Figure 4\OT1/ptm/m/n/10 : |The dif-fer-ence be-tween ground tr
+uth
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.406 Drums  & 11.33758 \mp
+                            16.85312      & 13.96146 \mp 16.00094     \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.406 Drums  & 11.33758 \mp 16.85312      &
+                                            13.96146 \mp 16.00094     \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.406 Drums  & 11.33758 \mp 16.85312      &
+                                            13.96146 \mp 16.00094     \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.406 Drums  & 11.33758 \mp 16.85312      &
+                                            13.96146 \mp 16.00094     \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.406 ...11.33758 \mp 16.85312      & 13.96146 \mp
+                                                   16.00094     \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.407 B
+       ass   & 2.08244 \mp 1.81634      & 2.03802 \mp 1.95372      \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.407 B
+       ass   & 2.08244 \mp 1.81634      & 2.03802 \mp 1.95372      \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.407 B
+       ass   & 2.08244 \mp 1.81634      & 2.03802 \mp 1.95372      \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.407 Bass   & 2.08244 \mp
+                           1.81634      & 2.03802 \mp 1.95372      \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.407 Bass   & 2.08244 \mp 1.81634      &
+                                          2.03802 \mp 1.95372      \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.407 Bass   & 2.08244 \mp 1.81634      &
+                                          2.03802 \mp 1.95372      \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.407 Bass   & 2.08244 \mp 1.81634      &
+                                          2.03802 \mp 1.95372      \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.407 ... & 2.08244 \mp 1.81634      & 2.03802 \mp
+                                                   1.95372      \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.408 M
+       elody & 0.30692 \mp 0.52348       & 0.24994 \mp 0.32676      \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.408 M
+       elody & 0.30692 \mp 0.52348       & 0.24994 \mp 0.32676      \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.408 M
+       elody & 0.30692 \mp 0.52348       & 0.24994 \mp 0.32676      \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.408 Melody & 0.30692 \mp
+                           0.52348       & 0.24994 \mp 0.32676      \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.408 Melody & 0.30692 \mp 0.52348       &
+                                           0.24994 \mp 0.32676      \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.408 Melody & 0.30692 \mp 0.52348       &
+                                           0.24994 \mp 0.32676      \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.408 Melody & 0.30692 \mp 0.52348       &
+                                           0.24994 \mp 0.32676      \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.408 ...& 0.30692 \mp 0.52348       & 0.24994 \mp
+                                                   0.32676      \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.409 V
+       ocals & 1.10308 \mp 2.74372       & 1.00838 \mp 2.93202      \\ \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.409 V
+       ocals & 1.10308 \mp 2.74372       & 1.00838 \mp 2.93202      \\ \hline
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.409 V
+       ocals & 1.10308 \mp 2.74372       & 1.00838 \mp 2.93202      \\ \hline
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.409 Vocals & 1.10308 \mp
+                           2.74372       & 1.00838 \mp 2.93202      \\ \hline
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.409 Vocals & 1.10308 \mp 2.74372       &
+                                           1.00838 \mp 2.93202      \\ \hline
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.409 Vocals & 1.10308 \mp 2.74372       &
+                                           1.00838 \mp 2.93202      \\ \hline
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.409 Vocals & 1.10308 \mp 2.74372       &
+                                           1.00838 \mp 2.93202      \\ \hline
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.409 ...& 1.10308 \mp 2.74372       & 1.00838 \mp
+                                                   2.93202      \\ \hline
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.409 ...     & 1.00838 \mp 2.93202      \\ \hline
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.409 ...     & 1.00838 \mp 2.93202      \\ \hline
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.409 ...     & 1.00838 \mp 2.93202      \\ \hline
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (2.57698pt too wide) in paragraph at lines 415--416
+[]\OT1/ptm/m/n/10 Although the re-sults for mixes clas-si-fied un-der the rock 
+genre
+ []
+
+[4 </Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regre
+ssion/Paper/LATEX/auto_mix_spectra-eps-converted-to.pdf> </Users/harrison/Deskt
+op/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/lg_a_di
+fference-eps-converted-to.pdf>]
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.418 \begin{center}{\columnwidth}
+                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.418 \begin{center}{\columnwidth}
+                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package keyval Error: [width undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.419 ...px, [width=0.9\columnwidth]{Plot_2_1.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <Plot_2_1.eps>
+(epstopdf)                    date: 2015-05-18 15:47:39
+(epstopdf)                    size: 26062 bytes
+(epstopdf)             Output file: <Plot_2_1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-18 15:51:23
+(epstopdf)                    size: 20690 bytes
+(epstopdf)             Command: <repstopdf --outfile=Plot_2_1-eps-converted-to.
+pdf Plot_2_1.eps>
+(epstopdf)             \includegraphics on input line 419.
+Package epstopdf Info: Output file is already uptodate.
+<Plot_2_1-eps-converted-to.pdf, id=168, 562.1pt x 421.575pt>
+File: Plot_2_1-eps-converted-to.pdf Graphic file (type pdf)
+<use Plot_2_1-eps-converted-to.pdf>
+Package pdftex.def Info: Plot_2_1-eps-converted-to.pdf used on input line 419.
+(pdftex.def)             Requested size: 200.75195pt x 150.56305pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.426 \centering{\columnwidth}
+                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.426 \centering{\columnwidth}
+                              
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package keyval Error: [width undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.427 ...150px, [width=\columnwidth]{Plot_3_1.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <Plot_3_1.eps>
+(epstopdf)                    date: 2015-05-18 15:47:39
+(epstopdf)                    size: 16147 bytes
+(epstopdf)             Output file: <Plot_3_1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-18 15:51:24
+(epstopdf)                    size: 12320 bytes
+(epstopdf)             Command: <repstopdf --outfile=Plot_3_1-eps-converted-to.
+pdf Plot_3_1.eps>
+(epstopdf)             \includegraphics on input line 427.
+Package epstopdf Info: Output file is already uptodate.
+<Plot_3_1-eps-converted-to.pdf, id=169, 562.1pt x 421.575pt>
+File: Plot_3_1-eps-converted-to.pdf Graphic file (type pdf)
+<use Plot_3_1-eps-converted-to.pdf>
+Package pdftex.def Info: Plot_3_1-eps-converted-to.pdf used on input line 427.
+(pdftex.def)             Requested size: 200.75195pt x 150.56305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
+[]\OT1/ptm/b/n/8 Figure 6\OT1/ptm/m/n/10 : |The dif-fer-ence be-tween ground tr
 uth
  []
 
@@ -1007,12 +1466,7 @@ uth
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package caption Warning: \label without proper \caption on input line 386.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tabel:crossgenre' on page 4 undefined on input line 3
-76.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package epstopdf Info: Source file: <corssgenre1.eps>
 (epstopdf)                    date: 2015-05-18 07:50:06
@@ -1022,13 +1476,13 @@ Package epstopdf Info: Source file: <corssgenre1.eps>
 (epstopdf)                    size: 33170 bytes
 (epstopdf)             Command: <repstopdf --outfile=corssgenre1-eps-converted-
 to.pdf corssgenre1.eps>
-(epstopdf)             \includegraphics on input line 394.
+(epstopdf)             \includegraphics on input line 455.
 Package epstopdf Info: Output file is already uptodate.
-<corssgenre1-eps-converted-to.pdf, id=147, 561.09625pt x 421.575pt>
+<corssgenre1-eps-converted-to.pdf, id=173, 561.09625pt x 421.575pt>
 File: corssgenre1-eps-converted-to.pdf Graphic file (type pdf)
 <use corssgenre1-eps-converted-to.pdf>
-Package pdftex.def Info: corssgenre1-eps-converted-to.pdf used on input line 39
-4.
+Package pdftex.def Info: corssgenre1-eps-converted-to.pdf used on input line 45
+5.
 (pdftex.def)             Requested size: 243.90366pt x 200.75195pt.
 Package epstopdf Info: Source file: <cross_genrespectra.eps>
 (epstopdf)                    date: 2015-05-18 07:50:20
@@ -1038,69 +1492,71 @@ Package epstopdf Info: Source file: <cross_genrespectra.eps>
 (epstopdf)                    size: 24909 bytes
 (epstopdf)             Command: <repstopdf --outfile=cross_genrespectra-eps-con
 verted-to.pdf cross_genrespectra.eps>
-(epstopdf)             \includegraphics on input line 399.
+(epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
-<cross_genrespectra-eps-converted-to.pdf, id=148, 561.09625pt x 421.575pt>
+<cross_genrespectra-eps-converted-to.pdf, id=174, 561.09625pt x 421.575pt>
 File: cross_genrespectra-eps-converted-to.pdf Graphic file (type pdf)
 <use cross_genrespectra-eps-converted-to.pdf>
 Package pdftex.def Info: cross_genrespectra-eps-converted-to.pdf used on input 
-line 399.
+line 460.
 (pdftex.def)             Requested size: 243.90366pt x 200.75195pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
 [][]
- []
-
-[4 </Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regre
-ssion/Paper/LATEX/auto_mix_spectra-eps-converted-to.pdf> </Users/harrison/Deskt
-op/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/lg_a_di
-fference-eps-converted-to.pdf>]
-Overfull \hbox (45.33606pt too wide) in paragraph at lines 416--417
-[]\OT1/ptm/m/n/10 One im-me-di-ate source of data this re-search pro-vides is g
-enre/instrument
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Warning: Reference `Introduction' on page 5 undefined on input line 418.
+Underfull \vbox (badness 1028) has occurred while \output is active []
 
-
-(/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regressi
-on/Paper/LATEX/Zafrin_Chudwick_MIRFP.bbl [5 </Users/harrison/Desktop/Github/Aut
-omatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/corssgenre1-eps-conv
+[5 </Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regre
+ssion/Paper/LATEX/Plot_1_1-eps-converted-to.pdf> </Users/harrison/Desktop/Githu
+b/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Plot_1-eps-conv
 erted-to.pdf> </Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-L
-inear-Regression/Paper/LATEX/cross_genrespectra-eps-converted-to.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
-[6
+inear-Regression/Paper/LATEX/Plot_2_1-eps-converted-to.pdf>]
+Overfull \hbox (0.97713pt too wide) in paragraph at lines 475--476
+[]\OT1/ptm/m/n/10 Therefore, while a ma-chine learn-ing based au-tonomous mix-
+ []
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+
+Overfull \hbox (1.22556pt too wide) in paragraph at lines 475--476
+\OT1/ptm/m/n/10 ing sys-tem was im-ple-mented suc-cess-fully, its va-lid-ity is
+ weak-
+ []
+
+[6 </Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regre
+ssion/Paper/LATEX/corssgenre1-eps-converted-to.pdf> </Users/harrison/Desktop/Gi
+thub/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/cross_genres
+pectra-eps-converted-to.pdf> </Users/harrison/Desktop/Github/Automatic-Mixing-U
+sing-Multiple-Linear-Regression/Paper/LATEX/Plot_3_1-eps-converted-to.pdf>]
+(/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regressi
+on/Paper/LATEX/Zafrin_Chudwick_MIRFP.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
+[7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
 
 (/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regressi
 on/Paper/LATEX/Zafrin_Chudwick_MIRFP.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
 Package rerunfilecheck Info: File `Zafrin_Chudwick_MIRFP.out' has not changed.
 (rerunfilecheck)             Checksum: 7A3D4CA684321CCEF11637209920A478;854.
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 488.
  )
-(\end occurred when \ifx on line 56 was incomplete) 
+(\end occurred when \ifx on line 52 was incomplete) 
 Here is how much of TeX's memory you used:
- 8147 strings out of 493117
- 123047 string characters out of 6135433
- 219363 words of memory out of 5000000
- 11422 multiletter control sequences out of 15000+600000
+ 8178 strings out of 493117
+ 123790 string characters out of 6135433
+ 220711 words of memory out of 5000000
+ 11441 multiletter control sequences out of 15000+600000
  22589 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,1749b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1715b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/tex
 mf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
@@ -1116,11 +1572,11 @@ er/ucrr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on /Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multipl
-e-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.pdf (6 pages, 332916 byte
+e-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.pdf (7 pages, 410020 byte
 s).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
