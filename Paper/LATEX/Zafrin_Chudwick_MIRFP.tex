@@ -183,8 +183,8 @@ v_t = \alpha_{1t}u_{1t} + \alpha_{2t}u_{2t} \dots \alpha_{kt}u_{kt}
 Here we see that at any time point $t$, any $k\textsuperscript{th}$ track in the mix has an amplitude value $u$ which can be placed according to its corresponding $\alpha$ mix coefficient.  However, due to copyright restrictions and limited access to useful data, ground truth mixing coefficients that should be used for training are a rarity if not completely absent. Therefore, to obtain some semblance of ground truth, a non-negative least squares computation can be performed as a substitution if both the isolated multi-tracks and summed master track are on hand.  Consider the following scenario given that the Fourier transform is a linear operator:
 
 
-\begin{equation}
 \[
+\begin{equation}
  \begin{bmatrix}
        U_{1,1} & U_{1,2} & U_{1,3} \cdots U_{1,k} \\[0.3em]
        U_{2,1} & U_{2,2} & U_{2,3} \cdots U_{2,k} \\[0.3em]
@@ -205,8 +205,8 @@ Here we see that at any time point $t$, any $k\textsuperscript{th}$ track in the
        V_{N}
  \end{bmatrix}
  \label{eq:stftlinear}
-\]
 \end{equation}
+\]
 
 
 \begin{figure*}[!htbp]
@@ -225,7 +225,7 @@ Here we see that at any time point $t$, any $k\textsuperscript{th}$ track in the
 \label{fig:katyperrycoef}
 \end{figure*}
 
-To attain the form given in equation \ref{eq:stftlinear}, the following process is executed.  First, for each track $k$ that contributes to the final mixture, the track is buffered into 1 second frames which overlap by 0.75 seconds.  This process is also executed for the master track $V$ so that at any time point $V_n$, $U_n\alpha \approx V_n$.  For each 1 second frame, a 1024 point STFT is computed with 50\% overlap.  The STFT for each track is then vectorized and concatenated such that the rows of $U(n, k)$ represent time while the columns represent each track $k$.  To improve the accuracy of the form given in equation \ref{eq:stftlinear}, if a track $k$ does not contribute to the final mixture at a given time point $n$, it is discarded.  To determine whether or not a track is active for a given frame, a simple thresholding is implemented such that if RMS$(k) < 0.01$, the track is considered inactive and not contributing to the final mixture.
+To attain the form given in equation 2, the following process is executed.  First, for each track $k$ that contributes to the final mixture, the track is buffered into 1 second frames which overlap by 0.75 seconds.  This process is also executed for the master track $V$ so that at any time point $V_n$, $U_n\alpha \approx V_n$.  For each 1 second frame, a 1024 point STFT is computed with 50\% overlap.  The STFT for each track is then vectorized and concatenated such that the rows of $U(n, k)$ represent time while the columns represent each track $k$.  To improve the accuracy of the form given in equation 2, if a track $k$ does not contribute to the final mixture at a given time point $n$, it is discarded.  To determine whether or not a track is active for a given frame, a simple thresholding is implemented such that if RMS$(k) < 0.01$, the track is considered inactive and not contributing to the final mixture.
 
 Once we have attained our stem-matrix $U(n, k)$ and our final mix vector $V$, the ground-truth fader coefficients $\alpha_k$ can be extracted using non-negative least squares:
 
@@ -313,7 +313,7 @@ mix_t = \hat{\alpha}_{1t}u_{1t} + \hat{\alpha}_{2t}u_{2t} \dots \hat{\alpha}_{kt
 \section{Results}
 \label{sec:Results}
 
-To evaluate the performance of the system, a leave-one-out cross-validation method is used where training occurs on N-1 songs in the dataset and testing is performed on the remaining song.  An averaged mean squared error is then computed across all songs in the dataset.  The calculations described in section \ref{sec:Algorithm and Implementation} were calculated on two different data sets repeated by genre.  To experiment with the difference in coefficient calculation across genre, the training data from the rock dataset was projected onto a top-40 pop songs test data.  The difference between the spectral shape of the human mixed masters and the autonomous mixed masters is also compared.
+To evaluate the performance of the system, a leave-one-out cross-validation method is used where training occurs on N-1 songs in the dataset and testing is performed on the remaining song.  An averaged mean squared error is then computed across all songs in the dataset.  The calculations described in section \ref{sec:Algorithm and Implementation} were calculated on two different data sets separated by genre.  To experiment with the difference in coefficient calculation across genre, the training data from the rock dataset was projected onto a top-40 pop songs test data.  The difference between the spectral shape of the human mixed masters and the autonomous mixed masters is also compared.
 
 % POP RESULTS
 %----------------------------------------------------------------------------------------
@@ -384,7 +384,7 @@ Vocals & 0.1100      & 0.1126      \\ \hline
 \subsection{Rock}
 \label{sec:rock}
 
-When applying the aforementioned processing to the various rock tracks, it is clear that the algorithm is less successful through both the resultant autonomous mix as well as the mean square error.  As seen in figure \ref{fig:bigtroubles} significant discrepancies appear between the ground truth and predicted mixing coefficients.  This visual difference is supported by Table A where the MSE is shown for each track and particular observation can be made of the drum coefficients which produce astronomical MSE numbers.  Similarly, the difference in frequency spectra in figures \ref{fig:spectra_rock} and \ref{fig:difference_rock} shows how drastic this difference is, specifically in the lower frequencies below 300 Hz and the higher frequencies above 4 kHz.  The coefficients clearly mirror the pop results by producing a significant loss of lower frequencies, resulting in a mix that is noticeably heavy in the midrange.  
+When applying the aforementioned processing to the various rock tracks, it is clear that the algorithm is less successful through both the resultant autonomous mix as well as the mean square error.  As seen in figure \ref{fig:bigtroubles} significant discrepancies appear between the ground truth and predicted mixing coefficients.  This visual difference is supported by table \ref{table:MSE-rock1} where the MSE is shown for each track and observations can be made of the drum coefficients which produce astronomical MSE numbers.  Similarly, the difference in frequency spectra in figures \ref{fig:spectra_rock} and \ref{fig:difference_rock} shows how drastic this difference is, specifically in the lower frequencies below 300 Hz and the higher frequencies above 4 kHz.  The coefficients clearly mirror the pop results by producing a significant loss of lower frequencies, resulting in a mix that is noticeably heavy in the midrange.  Unfortunately, some of these extreme discrepancies are likely attributable to imperfect summing of stems into the four buses, but additional analysis provides fruitful conclusions regardless.
 
 \begin{table}[h]
 \centering
@@ -412,7 +412,7 @@ Vocals & 1.10308 \mp 2.74372       & 1.00838 \mp 2.93202      \\ \hline
 \label{table:MSE-rock2}
 \end{table}
 
-Although the results for mixes classified under the rock genre appear to be incredibly poor, analysis using leave-one-out cross-validation provides important insights into the nature of the error by utilizing various other test tracks.  Interestingly, the MSE during cross-validation changes drastically, as can be seen in Table B where the average MSE, as well as its range among test tracks, are shown using five different tracks for testing.  Clearly this difference provides a strong indication of the variety among songs used in the analysis, which speaks to the difficulties inherent in broad genre classification.
+Although the results for mixes classified under the rock genre appear to be incredibly poor, analysis using leave-one-out cross-validation provides important insights into the nature of the error by utilizing various other test tracks.  Interestingly, the MSE during cross-validation changes drastically, as can be seen in table \ref{table:MSE-rock2} where the average MSE, as well as its range among test tracks, are shown using five different tracks for testing.  Clearly this difference provides a strong indication of the variety among songs used in the analysis, which speaks to the difficulties inherent in broad genre classification.
 
 \begin{figure}[h]
 \begin{center}{\columnwidth}

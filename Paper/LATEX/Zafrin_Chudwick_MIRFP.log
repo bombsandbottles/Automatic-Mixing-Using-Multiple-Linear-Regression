@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 MAY 2015 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 MAY 2015 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,8 +570,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 \[
-        
+l.187 \begin{equation}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -579,8 +579,8 @@ or  <return>  to continue without it.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.208 \]
-        
+l.208 \end{equation}
+                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -591,14 +591,14 @@ my insertion and my current dilemma will both disappear.
 Underfull \vbox (badness 1776) has occurred while \output is active []
 
 
-! LaTeX Error: \begin{equation} on input line 186 ended by \end{equation*}.
+! LaTeX Error: \begin{equation*} on input line 186 ended by \end{equation}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.208 \]
-        
+l.208 \end{equation}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -610,21 +610,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.209 \end{equation}
-                    
+l.209 \]
+        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{document} ended by \end{equation}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.209 \end{equation}
-                    
+l.209 \]
+        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -632,8 +632,8 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.209 \end{equation}
-                    
+l.209 \]
+        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -643,16 +643,16 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.209 \end{equation}
-                    
+l.209 \]
+        
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.209 \end{equation}
-                    
+l.209 \]
+        
 Things are pretty mixed up, but I think the worst is over.
 
 Package epstopdf Info: Source file: <kp_cg.eps>
@@ -920,7 +920,7 @@ Package epstopdf Info: Source file: <Plot_1_1.eps>
 pdf Plot_1_1.eps>
 (epstopdf)             \includegraphics on input line 326.
 Package epstopdf Info: Output file is already uptodate.
-<Plot_1_1-eps-converted-to.pdf, id=132, 562.1pt x 421.575pt>
+<Plot_1_1-eps-converted-to.pdf, id=130, 562.1pt x 421.575pt>
 File: Plot_1_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Plot_1_1-eps-converted-to.pdf>
 Package pdftex.def Info: Plot_1_1-eps-converted-to.pdf used on input line 326.
@@ -935,7 +935,7 @@ Package epstopdf Info: Source file: <Plot_1.eps>
 f Plot_1.eps>
 (epstopdf)             \includegraphics on input line 331.
 Package epstopdf Info: Output file is already uptodate.
-<Plot_1-eps-converted-to.pdf, id=133, 562.1pt x 421.575pt>
+<Plot_1-eps-converted-to.pdf, id=131, 562.1pt x 421.575pt>
 File: Plot_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Plot_1-eps-converted-to.pdf>
 Package pdftex.def Info: Plot_1-eps-converted-to.pdf used on input line 331.
@@ -973,7 +973,7 @@ l.369 ...h]{auto_mix_spectra-eps-converted-to.pdf}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<auto_mix_spectra-eps-converted-to.pdf, id=138, 1233.60875pt x 549.05125pt>
+<auto_mix_spectra-eps-converted-to.pdf, id=136, 1233.60875pt x 549.05125pt>
 File: auto_mix_spectra-eps-converted-to.pdf Graphic file (type pdf)
 <use auto_mix_spectra-eps-converted-to.pdf>
 Package pdftex.def Info: auto_mix_spectra-eps-converted-to.pdf used on input li
@@ -1025,7 +1025,7 @@ Package epstopdf Info: Source file: <lg_a_difference.eps>
 ted-to.pdf lg_a_difference.eps>
 (epstopdf)             \includegraphics on input line 377.
 Package epstopdf Info: Output file is already uptodate.
-<lg_a_difference-eps-converted-to.pdf, id=139, 561.09625pt x 421.575pt>
+<lg_a_difference-eps-converted-to.pdf, id=137, 561.09625pt x 421.575pt>
 File: lg_a_difference-eps-converted-to.pdf Graphic file (type pdf)
 <use lg_a_difference-eps-converted-to.pdf>
 Package pdftex.def Info: lg_a_difference-eps-converted-to.pdf used on input lin
@@ -1506,9 +1506,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 460--462
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \vbox (badness 1028) has occurred while \output is active []
 
 [5 </Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regre
@@ -1552,7 +1549,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 488.
 Here is how much of TeX's memory you used:
  8178 strings out of 493117
  123790 string characters out of 6135433
- 220711 words of memory out of 5000000
+ 220713 words of memory out of 5000000
  11441 multiletter control sequences out of 15000+600000
  22589 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1572,7 +1569,7 @@ er/ucrr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on /Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multipl
-e-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.pdf (7 pages, 410020 byte
+e-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.pdf (7 pages, 410095 byte
 s).
 PDF statistics:
  292 PDF objects out of 1000 (max. 8388607)

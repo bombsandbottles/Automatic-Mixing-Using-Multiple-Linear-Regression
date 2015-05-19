@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex Zafrin_Chudwick_MIRFP"] 1431993336 "Zafrin_Chudwick_MIRFP.aux" "Zafrin_Chudwick_MIRFP.bbl" "Zafrin_Chudwick_MIRFP" 1431993338
+["bibtex Zafrin_Chudwick_MIRFP"] 1431995440 "Zafrin_Chudwick_MIRFP.aux" "Zafrin_Chudwick_MIRFP.bbl" "Zafrin_Chudwick_MIRFP" 1431996661
   "/usr/local/texlive/2014/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
-  "Zafrin_Chudwick_MIRFP.aux" 1431993337 11330 ef93df272059619ead0fbfb06bf444f1 ""
+  "Zafrin_Chudwick_MIRFP.aux" 1431996660 11332 b6ef453714bc3a93dc5cbb9d048d429e ""
   "Zafrin_Chudwick_MIRFP.bcf" 0 -1 0 ""
   "Zafrin_Chudwick_MIRFP.bib" 1431958900 7680 97ed25ef1f8d7c824a0a7ad7139f8490 ""
   (generated)
-  "Zafrin_Chudwick_MIRFP.bbl"
   "Zafrin_Chudwick_MIRFP.blg"
-["pdflatex"] 1431993336 "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.tex" "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.pdf" "Zafrin_Chudwick_MIRFP" 1431993338
-  "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.aux" 1431993337 11330 ef93df272059619ead0fbfb06bf444f1 ""
-  "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.tex" 1431993327 36713 156b6d314c2dd12cf79d99f16a701810 ""
+  "Zafrin_Chudwick_MIRFP.bbl"
+["pdflatex"] 1431996659 "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.tex" "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.pdf" "Zafrin_Chudwick_MIRFP" 1431996661
+  "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.aux" 1431996660 11332 b6ef453714bc3a93dc5cbb9d048d429e ""
+  "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.tex" 1431996655 36899 35dd77b97c664fb2c822030a6ad2f381 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -123,10 +123,10 @@
   "Plot_2_1.eps" 1431978459 26062 6eefa8886602daa28c3a8d39d0cd9d9a ""
   "Plot_3_1-eps-converted-to.pdf" 1431978684 12320 3ad86927a1aa75efc69431d7fbb4c6c5 ""
   "Plot_3_1.eps" 1431978459 16147 301fbfe6868965573a27f2f08cd8486c ""
-  "Zafrin_Chudwick_MIRFP.aux" 1431993337 11330 ef93df272059619ead0fbfb06bf444f1 ""
-  "Zafrin_Chudwick_MIRFP.bbl" 1431993336 3058 1b91b5f0cf7541e7c7e36b108a8a1b43 "bibtex Zafrin_Chudwick_MIRFP"
-  "Zafrin_Chudwick_MIRFP.out" 1431993337 854 7a3d4ca684321ccef11637209920a478 ""
-  "Zafrin_Chudwick_MIRFP.tex" 1431993327 36713 156b6d314c2dd12cf79d99f16a701810 ""
+  "Zafrin_Chudwick_MIRFP.aux" 1431996660 11332 b6ef453714bc3a93dc5cbb9d048d429e ""
+  "Zafrin_Chudwick_MIRFP.bbl" 1431995441 3058 1b91b5f0cf7541e7c7e36b108a8a1b43 "bibtex Zafrin_Chudwick_MIRFP"
+  "Zafrin_Chudwick_MIRFP.out" 1431996660 854 7a3d4ca684321ccef11637209920a478 ""
+  "Zafrin_Chudwick_MIRFP.tex" 1431996655 36899 35dd77b97c664fb2c822030a6ad2f381 ""
   "auto_mix_spectra-eps-converted-to.pdf" 1431944103 27894 62b45b1d06fa70bd162c7618bc59e172 ""
   "corssgenre1-eps-converted-to.pdf" 1431949927 33170 257f987744186108775aef47eadebc33 ""
   "corssgenre1.eps" 1431949806 43913 322330d8600ed3e86a5b537ad66e8467 ""
@@ -140,9 +140,9 @@
   "lg_a_difference-eps-converted-to.pdf" 1431948266 12358 6f279303e2216b0ae9779b15ca5424a0 ""
   "lg_a_difference.eps" 1431926445 16556 4f6727e31cd85f764376489c95beb649 ""
   (generated)
-  "Zafrin_Chudwick_MIRFP.log"
   "Zafrin_Chudwick_MIRFP.out"
   "Zafrin_Chudwick_MIRFP.pdf"
-  "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.log"
   "Zafrin_Chudwick_MIRFP.aux"
   "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.pdf"
+  "/Users/harrison/Desktop/Github/Automatic-Mixing-Using-Multiple-Linear-Regression/Paper/LATEX/Zafrin_Chudwick_MIRFP.log"
+  "Zafrin_Chudwick_MIRFP.log"
